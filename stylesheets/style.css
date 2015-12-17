@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+ul, li, a {
+  list-style-type: none;
+  text-decoration: none; }
+
+#nav {
+  border: solid black 1px; }
+
+/*# sourceMappingURL=style.css.map */

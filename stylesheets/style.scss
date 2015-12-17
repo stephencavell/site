@@ -1,0 +1,13 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+
+//turn off default styling for lists and links
+ul, li, a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#nav {
+    border: solid black 1px;
+}
