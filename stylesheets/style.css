@@ -1,33 +1,114 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 html, body {
   margin: 0;
   padding: 0;
-  border: 0; }
+  border: 0;
+  background-image: url(../imgs/patterns/brickwall/brickwall.png); }
 
 ul, li, a {
   list-style-type: none;
-  text-decoration: none; }
+  text-decoration: none;
+  text-emphasis-color: white;
+  text-decoration-color: white;
+  color: black;
+  text-align: center;
+  padding: 0; }
 
-#nav {
-  border: solid black 1px; }
+.cards {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: start;
+  min-height: 100vh; }
+
+.navbar {
+  height: 75px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-flex-grow: 0;
+  -moz-flex-grow: 0;
+  flex-grow: 0;
+  -ms-flex-positive: 0;
+  background-image: url(../imgs/pattern.png);
+  margin: 0;
+  padding: 0;
+  border: 0; }
+  .navbar::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .navbar #github {
+    margin-left: 34.11922%;
+    float: left;
+    display: block;
+    width: 8.5298%; }
+    .navbar #github:last-child {
+      width: 6.17215%; }
+  .navbar #linkedin {
+    float: left;
+    display: block;
+    width: 8.5298%;
+    margin-left: 17.05961%; }
+    .navbar #linkedin:last-child {
+      width: 6.17215%; }
+
+a > img {
+  position: relative;
+  bottom: -12px; }
 
 .card {
-  width: 100%;
-  height: 100vh;
   padding: 0;
   marigin: 0;
   border: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1; }
 
-h1, h2 {
-  padding: 0;
-  marigin: 0;
-  border: 0; }
+#name {
+  text-align: center; }
 
-#card1 {
-  background-color: aquamarine;
-  border: 0; }
-
-#card2 {
-  background-color: aqua; }
+/*#card0 {
+    @include outer-container(100%);
+    background-image: url(../imgs/patterns/small_steps/small_steps.png);
+}*/
 
 /*# sourceMappingURL=style.css.map */

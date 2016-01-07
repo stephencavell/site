@@ -1,39 +1,73 @@
 @import "bourbon/bourbon";
-//@import "neat/neat";
+@import "neat/neat";
 
 html, body {
     margin: 0;
     padding: 0;
     border: 0;
+    background-image: url(../imgs/patterns/brickwall/brickwall.png);
 }
+
 //turn off default styling for lists and links
 ul, li, a {
     list-style-type: none;
     text-decoration: none;
+    text-emphasis-color: white;
+    text-decoration-color: white;
+    color: black;
+    text-align: center;
+    padding: 0;
 }
 
-#nav {
-    border: solid black 1px;
+.cards {
+    @include display(flex);
+    @include flex-direction(column);
+    @include align-items(stretch);
+    @include justify-content(flex-start);
+    min-height: 100vh;
 }
 
+//navbar setting
+.navbar {
+    height: 75px;
+    @include outer-container(100%);
+    @include flex-grow(0);
+    background-image: url(../imgs/pattern.png);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+    #github {
+        @include shift(4);
+        @include span-columns(1, block-collapse);
+    }
+    
+    #linkedin {
+        @include span-columns(1, block-collapse);
+        @include shift(2);
+    }
+}
+
+a > img {
+    position: relative;
+    bottom: -12px;
+}
+
+//card is a section of the page
 .card {
-    width: 100%;
-    height: 100vh;
     padding: 0;
     marigin: 0;
     border: 0;
     overflow: hidden;
+    @include flex-grow(1);
 }
 
-h1, h2 {
-    padding: 0;
-    marigin: 0;
-    border: 0;
+//testing stuff for first card neat layout
+#name {
+    text-align: center;
 }
-#card1 {
-    background-color: aquamarine;
-    border: 0;
-}
-#card2 {
-    background-color: aqua;
-}
+
+/*#card0 {
+    @include outer-container(100%);
+    background-image: url(../imgs/patterns/small_steps/small_steps.png);
+}*/
