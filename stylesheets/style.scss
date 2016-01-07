@@ -8,7 +8,7 @@ html, body {
     border: 0;
     background-image: url(../imgs/patterns/brickwall/brickwall.png);
     font-family: 'Amatic SC', cursive;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 //turn off default styling for lists and links
@@ -32,10 +32,9 @@ ul, li, a {
 
 //navbar setting
 .navbar {
-    height: 200px;
+    min-height: 75px;
     @include outer-container(100%);
-    @include flex-grow(0);
-    //background-image: url(../imgs/pattern.png);
+    @include flex-grow(1);
     margin: 0;
     padding: 0;
     border: 0;
@@ -62,7 +61,8 @@ a > img {
     marigin: 0;
     border: 0;
     overflow: hidden;
-    @include flex-grow(1);
+   
+    @include flex-grow(3);
     
     @include display(flex);
     @include flex-direction(column);
@@ -76,7 +76,17 @@ a > img {
     font-size: 500%;
 }
 
-/*#card0 {
-    @include outer-container(100%);
-    background-image: url(../imgs/patterns/small_steps/small_steps.png);
-}*/
+@media only screen and (max-device-width: 700px) {
+    #name {
+        font-size: 1000%;
+    }
+    #titles {
+        font-size: 300%;
+    }
+    #education {
+        font-size: 200%;
+    }
+    a > img {
+        height: 100px;
+    }
+}
