@@ -1,11 +1,14 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 
 html, body {
     margin: 0;
     padding: 0;
     border: 0;
     background-image: url(../imgs/patterns/brickwall/brickwall.png);
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
 }
 
 //turn off default styling for lists and links
@@ -29,10 +32,10 @@ ul, li, a {
 
 //navbar setting
 .navbar {
-    height: 75px;
+    height: 200px;
     @include outer-container(100%);
     @include flex-grow(0);
-    background-image: url(../imgs/pattern.png);
+    //background-image: url(../imgs/pattern.png);
     margin: 0;
     padding: 0;
     border: 0;
@@ -60,11 +63,17 @@ a > img {
     border: 0;
     overflow: hidden;
     @include flex-grow(1);
+    
+    @include display(flex);
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
 }
 
 //testing stuff for first card neat layout
 #name {
     text-align: center;
+    font-size: 500%;
 }
 
 /*#card0 {
