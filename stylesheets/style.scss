@@ -76,6 +76,30 @@ a > img {
     font-size: 500%;
 }
 
+//Resume settings
+
+.resume_section {
+    @include outer-container(70%);
+}
+
+.resume_title {
+    text-align: center;
+}
+
+#courses {
+    #courses_c1 {
+        @include span-columns(3);
+        @include shift(2);
+    }
+
+    #courses_c2 {
+        @include span-columns(3);
+        @include shift(2);
+    }
+}
+
+
+//Settings for mobile screens
 @media only screen and (max-device-width: 700px) {
     #name {
         font-size: 1000%;
