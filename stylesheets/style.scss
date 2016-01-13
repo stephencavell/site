@@ -12,7 +12,7 @@ html, body {
 }
 
 //turn off default styling for lists and links
-ul, li, a {
+a {
     list-style-type: none;
     text-decoration: none;
     text-emphasis-color: white;
@@ -78,6 +78,12 @@ a > img {
 
 //Resume settings
 
+#resume {
+    
+    display: none;
+    
+}
+
 .resume_section {
     @include outer-container(70%);
 }
@@ -87,6 +93,7 @@ a > img {
 }
 
 #courses {
+    text-align: center;
     #courses_c1 {
         @include span-columns(3);
         @include shift(2);
@@ -95,6 +102,59 @@ a > img {
     #courses_c2 {
         @include span-columns(3);
         @include shift(2);
+    }
+}
+
+#experience {
+    .exp_info {
+        
+        .exp_info_c1 {
+            @include span-columns(3);
+        }
+        
+        .exp_info_c2 {
+            text-align: right;
+            @include shift(6);
+            @include span-columns(3);
+        }
+    }
+    .exp_description {
+        @include span-columns(10);
+        @include shift(1);
+    }
+}
+
+#class_projects {
+    
+    .project {
+        
+        .project_title {
+            
+            @include span-columns(12);
+        }
+        
+        .project_description {
+            @include span-columns(10);
+            @include shift(1);
+        }
+    }
+}
+
+#skills {
+    text-align: center;
+    #skills_c1 {
+        @include span-columns(2);
+        @include shift(2);
+    }
+    
+    #skills_c2 {
+        @include shift(1);
+        @include span-columns(2);
+    }
+    
+    #skills_c3 {
+        @include shift(1);
+        @include span-columns(2);
     }
 }
 

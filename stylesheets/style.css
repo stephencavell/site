@@ -13,7 +13,7 @@ html, body {
   font-family: 'Amatic SC', cursive;
   font-weight: bold; }
 
-ul, li, a {
+a {
   list-style-type: none;
   text-decoration: none;
   text-emphasis-color: white;
@@ -144,6 +144,9 @@ a > img {
   text-align: center;
   font-size: 500%; }
 
+#resume {
+  display: none; }
+
 .resume_section {
   max-width: 70%;
   margin-left: auto;
@@ -156,22 +159,92 @@ a > img {
 .resume_title {
   text-align: center; }
 
-#courses #courses_c1 {
+#courses {
+  text-align: center; }
+  #courses #courses_c1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-left: 17.05961%; }
+    #courses #courses_c1:last-child {
+      margin-right: 0; }
+  #courses #courses_c2 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-left: 17.05961%; }
+    #courses #courses_c2:last-child {
+      margin-right: 0; }
+
+#experience .exp_info .exp_info_c1 {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  margin-left: 17.05961%; }
-  #courses #courses_c1:last-child {
+  width: 23.23176%; }
+  #experience .exp_info .exp_info_c1:last-child {
     margin-right: 0; }
-#courses #courses_c2 {
+#experience .exp_info .exp_info_c2 {
+  text-align: right;
+  margin-left: 51.17883%;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  margin-left: 17.05961%; }
-  #courses #courses_c2:last-child {
+  width: 23.23176%; }
+  #experience .exp_info .exp_info_c2:last-child {
     margin-right: 0; }
+#experience .exp_description {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  #experience .exp_description:last-child {
+    margin-right: 0; }
+
+#class_projects .project .project_title {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #class_projects .project .project_title:last-child {
+    margin-right: 0; }
+#class_projects .project .project_description {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  #class_projects .project .project_description:last-child {
+    margin-right: 0; }
+
+#skills {
+  text-align: center; }
+  #skills #skills_c1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    margin-left: 17.05961%; }
+    #skills #skills_c1:last-child {
+      margin-right: 0; }
+  #skills #skills_c2 {
+    margin-left: 8.5298%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    #skills #skills_c2:last-child {
+      margin-right: 0; }
+  #skills #skills_c3 {
+    margin-left: 8.5298%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    #skills #skills_c3:last-child {
+      margin-right: 0; }
 
 @media only screen and (max-device-width: 700px) {
   #name {

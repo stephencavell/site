@@ -2,18 +2,27 @@
 <html>
     <head>
         <link rel="stylesheet" href="stylesheets/style.css">
-        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <!--<script src="scroll.js"></script>-->
-        
+        <!--<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>-->
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular-ui-router/build/angular-ui-router.min.js"></script>
     </head>
+    
     
     <body>
         <div class="cards">
+            
             <div class="card" id="card0">
                 <h1 id="name">Stephen Cavell</h1>
                 <h3 id="titles">Programmer | Developer</h3>
                 <h4 id="education">Bachelor of Science, Computer Science, U.N.C. Chapel Hill 2015</h4>
             </div>
+            
+            <nav>
+                <a>Home</a>
+                <a>Resume</a>
+                <a>Contact</a>
+            </nav>
+            
             <div id="resume">
                 
                 <div class="resume_section">
@@ -37,6 +46,31 @@
                 <div class="resume_section">
                     <h3 class="resume_title">Experience</h3>
                     <div id="experience">
+                        <div class="exp_info">
+                            <div class="exp_info_c1">
+                                <h4 class="exp_company">CreativeMegabyte, LLC</h4>
+                                <h4 class="exp_position">Intern</h4>
+                            </div>
+                            <div class="exp_info_c2">
+                                <h4 class="exp_loc">Charlotte, NC</h4>
+                                <h4 class="exp_dur">August, 2015 - October, 2015</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="exp_description">
+                                <li>Developed early stages of a web based multi-platform 
+                                    application for Android and IOS using Ionic 
+                                    Framework/AngularJS and Apache Cordova.</li>
+                                <li>Redesigned an existing project management 
+                                    app with AngularJS and Bootstrap.</li>
+                                <li>Development included use of npm and Bower 
+                                    package managers, DreamFactory back end, 
+                                    and server setup with PHP scripting and 
+                                    MySQL databases.</li>
+                                <li>Progress managed through git repositories 
+                                    and also involved usage of Vagrant boxes.</li>
+                            </ul>
+                        </div>
                         
                     </div>
                 </div>
@@ -44,17 +78,109 @@
                 <div class="resume_section">
                     <h3 class="resume_title">Class Projects</h3>
                     <div id="class_projects">
+                        <div class="project">
+                            <h4 class="project_title">Software Engineering Lab - Tar Heel Reader Project</h4>
+                            <ul class="project_description">
+                                <li>Team project to create IOS and 
+                                    Android application versions of 
+                                    tarheelreader.org for client.
+                                </li>
+                                <li>
+                                    Modified and reworked existing JS, 
+                                    HTML, CSS, and PHP to use with Apache Cordova.
+                                </li>
+                                <li>
+                                    Facilitated communications between team, 
+                                    client, and professor.
+                                </li>
+                                <li>
+                                    Contributed to IOS builds, 
+                                    design documentation, and project schedule.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project">
+                            <h4 class="project_title">Serious Games - Yggdrasil game project</h4>
+                            <ul class="project_description">
+                                <li>
+                                    Team project to create IOS and 
+                                    Android application versions 
+                                    of tarheelreader.org for client.
+                                </li>
+                                <li>
+                                    Developed demo level using Unity 
+                                    Engine 4 with C# and JS scripts.
+                                </li>
+                                <li>
+                                    Contributed to game concept, story, 
+                                    level design, animation, and physics.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project">
+                            <h4 class="project_title">Advanced WWW Programming</h4>
+                            <ul class="project_description">
+                                <li>
+                                    Minesweeper project: Developed a 
+                                    web version minesweeper game using 
+                                    JS, CSS, HTML5, and the jQuery library.
+                                </li>
+                                <li>
+                                    Drum machine project: Developed a web 
+                                    drum machine using JS, CSS, HTML5, jQuery 
+                                    library, and Web Audio API.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project">
+                            <h4 class="project_title">Files and Databases</h4>
+                            <ul class="project_description">
+                                <li>
+                                    Practiced relational database design 
+                                    and advanced querying in SQL using SQLite.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project">
+                            <h4 class="project_title">Data Structures</h4>
+                            <ul class="project_description">
+                                <li>
+                                    Java implementations of VIPQueues, 
+                                    binary heaps, and binary search trees.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="resume_section">
                     <h3 class="resume_title">Skills</h3>
                     <div id="skills">
+                        <div id="skills_c1">
+                            <p>Javascript</p>
+                            <p>Angular JS</p>
+                            <p>Apache Cordova</p>
+                            <p>Mongo Databases</p>
+                            <p>Object Oriented Design</p>
+                        </div>
+                        <div id="skills_c2">
+                            <p>HTML5</p>
+                            <p>Ionic</p>
+                            <p>Git</p>
+                            <p>Python</p>
+                            <p>Development Life Cycles</p>
+                        </div>
+                        <div id="skills_c3">
+                            <p>CSS3/SCSS/SASS</p>
+                            <p>MySQL/SQL</p>
+                            <p>Java</p>
+                            <p>PHP</p>
+                            <p>Project Documentation</p>
+                        </div>
                     </div>
                 </div>
                 
             </div>
-            
             <nav class="navbar">
                 <a id="github" target="_blank" href="https://github.com/stephencavell">
                     <img src="imgs/github-256.png" height="50">
@@ -63,6 +189,7 @@
                     <img src="imgs/linkedin-1.png" height="50">
                 </a>
             </nav>
+            
         </div>
         
     </body>
